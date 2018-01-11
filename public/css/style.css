@@ -1,0 +1,20 @@
+body {
+  padding-top: 2em;
+}
+.action-column {
+	white-space: nowrap;
+}
+.button-form, .link-button-form {
+	display: inline;
+}
+.link-button-form button {
+	background: none;
+	border: none;
+	color: #337ab7;
+	outline: none;
+  padding: 0;
+}
+.link-button-form button:hover, .link-button-form button:focus {
+	color: #23527c;
+	text-decoration: underline;
+}
