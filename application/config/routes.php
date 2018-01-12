@@ -52,3 +52,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['items']['get'] = 'items_controller/index';
+$route['items/(:num)']['get'] = 'items_controller/show/$1';
+$route['items/new']['get'] = 'items_controller/new_item';
+$route['items']['post'] = 'items_controller/create';
+$route['items/(:num)/edit']['get'] = 'items_controller/edit/$1';
+$route['items/(:num)']['put'] = 'items_controller/update/$1';
+$route['items/(:num)']['delete'] = 'items_controller/delete/$1';

@@ -1,5 +1,5 @@
 <h1>Create item</h1>
-<?php echo form_open('items/create'); ?>
+<?php echo form_open('items'); ?>
   <div class="form-group<?= form_error('name') ? ' has-error' : '' ?>">
     <label for="name">Name</label>
     <input type="text" name="name" value="<?= set_value('name') ?>" class="form-control">
